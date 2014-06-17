@@ -21,6 +21,7 @@
 		15F2EEA51950E7A800745B04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F2EE871950E7A700745B04 /* UIKit.framework */; };
 		15F2EEAD1950E7A800745B04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15F2EEAB1950E7A800745B04 /* InfoPlist.strings */; };
 		15F2EEAF1950E7A800745B04 /* TouchyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2EEAE1950E7A800745B04 /* TouchyTests.m */; };
+		15F2EEBB1950E80500745B04 /* TYTouchyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F2EEBA1950E80500745B04 /* TYTouchyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		15F2EEAA1950E7A800745B04 /* TouchyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchyTests-Info.plist"; sourceTree = "<group>"; };
 		15F2EEAC1950E7A800745B04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15F2EEAE1950E7A800745B04 /* TouchyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchyTests.m; sourceTree = "<group>"; };
+		15F2EEB91950E80500745B04 /* TYTouchyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTouchyView.h; sourceTree = "<group>"; };
+		15F2EEBA1950E80500745B04 /* TYTouchyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTouchyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		15F2EE891950E7A700745B04 /* Touchy */ = {
 			isa = PBXGroup;
 			children = (
+				15F2EEB81950E7BB00745B04 /* iPad */,
 				15F2EE921950E7A700745B04 /* TYAppDelegate.h */,
 				15F2EE931950E7A700745B04 /* TYAppDelegate.m */,
 				15F2EE951950E7A800745B04 /* Main.storyboard */,
@@ -119,6 +123,8 @@
 				15F2EE991950E7A800745B04 /* TYViewController.m */,
 				15F2EE9B1950E7A800745B04 /* Images.xcassets */,
 				15F2EE8A1950E7A700745B04 /* Supporting Files */,
+				15F2EEB91950E80500745B04 /* TYTouchyView.h */,
+				15F2EEBA1950E80500745B04 /* TYTouchyView.m */,
 			);
 			path = Touchy;
 			sourceTree = "<group>";
@@ -150,6 +156,13 @@
 				15F2EEAB1950E7A800745B04 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15F2EEB81950E7BB00745B04 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15F2EE901950E7A700745B04 /* main.m in Sources */,
+				15F2EEBB1950E80500745B04 /* TYTouchyView.m in Sources */,
 				15F2EE941950E7A700745B04 /* TYAppDelegate.m in Sources */,
 				15F2EE9A1950E7A800745B04 /* TYViewController.m in Sources */,
 			);
@@ -380,7 +394,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Touchy/Touchy-Prefix.pch";
 				INFOPLIST_FILE = "Touchy/Touchy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,7 +409,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Touchy/Touchy-Prefix.pch";
 				INFOPLIST_FILE = "Touchy/Touchy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
